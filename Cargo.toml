@@ -1,0 +1,20 @@
+[package]
+name = "openapi_to_rust"
+version = "0.0.0"
+authors = ["Rob Fraser <robtovasoft@gmail.com>"]
+edition = "2018"
+
+[lib]
+proc-macro = true
+
+[features]
+chrono = []
+
+[dependencies]
+darling = "0.12"
+heck = "0.3"
+openapiv3 = "0.4"
+proc-macro2 = "1.0"
+quote = "1.0"
+serde_yaml = "0.8"
+syn = "1.0"

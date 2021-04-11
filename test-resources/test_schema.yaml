@@ -1,0 +1,27 @@
+openapi: 3.0.0
+info:
+  title: Test file
+  description: Just a file for testing.
+  version: 0.0.0
+paths:
+  /test:
+    get:
+      summary: Just a test.
+      description: For testing.
+      responses:
+        '200':
+          description: Nothing.
+components:
+  schemas:
+    TestEnum:
+      type: string
+      enum: [foo, bar]
+    TestStruct:
+      type: object
+      properties:
+        foo:
+          type: string
+        bar:
+          type: integer
+      required:
+        - foo
